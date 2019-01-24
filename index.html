@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/bulma-icon.png" sizes="32x32">
+    <title>Minusdan's Courier</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900|Raleway:300,400,900" rel="stylesheet">
+    <!-- Bulma Version 0.7.2-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/tstyle.css">   
+    <script defer src="js/script.js"></script> 
+    <script src="https://matthewelsom.com/assets/js/libs/instafeed.min.js"></script>
+    <script src="js/index.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+ 
+<head>
+<body>
+
+<!--Navbar-->
+<nav class="navbar" style="height: 100px;">
+
+    <div class="container">
+        
+        <div class="column left desktop" style="height: 100px; margin-left: 150px">
+            <a href="#home">
+                <figure class="image desktop">
+                    <img src="images/bulma-logo.png" style="height: 2.5rem" alt="bulma-logo">
+                </figure>        
+            </a>          
+        </div>
+    
+        <div class="navbar-brand desktop">
+
+            <div class="navbar-start flex column center" style="margin-right: 150px">    
+                    
+                <a class="navbar-item has-text-white" href="">
+                    Inicio
+                </a>            
+
+                <a class="navbar-item has-text-white" href="">
+                    Servicios
+                </a>
+                <a class="navbar-item has-text-white" href="">
+                    Tarifas
+                </a>
+                <a class="navbar-item has-text-white" href="">
+                    Quiénes somos
+                </a>             
+                <div class="navbar-item has-dropdown is-hoverable" style="margin-left: -5px">
+                    <a class="navbar-item has-text-white" href="/documentation/overview/start/">
+                       Contacto
+                       <span class="icon is-small"></span><i class="fas fa-angle-down"></i>
+                            </a>
+                            <div class="navbar-dropdown is-boxed">
+                                <a class="navbar-item navbar-dropdown-font" href="/documentation/overview/start/">
+                                    Horarios
+                                </a>
+                                <a class="navbar-item navbar-dropdown-font" href="https://bulma.io/documentation/modifiers/syntax/">
+                                    Preguntas Frecuentes
+                                </a>
+                                <a class="navbar-item navbar-dropdown-font" href="https://bulma.io/documentation/columns/basics/">
+                                    Números Telefonicos
+                                </a>
+                            </div>
+                        </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="navbar-brand hidden-desktop">    
+            <div class="container left">                                
+                <figure class="image">
+                    <img src="images/bulma-mobile.png" style="height: 5rem; width: 5rem;" alt="bulma-logo-mobile">
+                </figure>
+            </div>
+
+            <div class="container center" style="height: 80px;">
+                <figure class="navbar-burger burger image hidden-desktop center has-text-white" data-target="navMenu">                      
+                    <i class="fas fa-2x fa-bars center"></i>
+                </figure>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+            </div>
+        </div>           
+    </div>
+
+   <!--Burger-->
+    <div id="navMenu" class="navbar-menu hidden-desktop" style="background: #363636;">
+        <div class="container space-evenly column center">
+            <p class="navbar-item"><a class="heading has-text-white is-size-7" href="#home">Home</a></p>             
+            <p class="navbar-item"><a class="heading has-text-white is-size-7" href="#gallery">Gallery</a></p>
+            <p class="navbar-item"><a class="heading has-text-white is-size-7" href="#contactme">Contact</a></p>
+        </div>
+    </div> 
+
+</nav>  
+
+<!--Background-->
+<section id="home" class="hero ">
+    
+    <figure class="image desktop">
+        
+        <div class="mask1"><img src="images/splash222.jpg" "alt="hero"></div>
+    </figure>
+    
+	<div class="is-overlay has-text-centered single-spaced" style="top: 300px;">
+            <h1 class="subtitle is-4 has-text-white">Servicio de transporte y logística</h1>
+            <h2 class="texthero title is-1 has-text-white">Para tus compras por internet y recaudos desde cualquier parte del mundo</h2>
+            <a class="button is-info is-inverted is-outlined is-rounded   has-text-weight-bold" style="padding: 25px; border: 0.15em solid white;">
+								Servicios
+							</a>
+      </div>
+
+
+
+
+    <figure class="image hidden-desktop">
+        <img src="images/hero-2.jpg" alt="hero-mobile">
+    </figure>
+</section>
+
+<!--Presentation-->
+<div class="section-one">
+    <h2 class="section-one__title is-size-3 has-text-grey-darker playfair"> Title</h2>
+
+    <p class="subtitle divider""><span></span></p>
+    
+    <p class="section-one__descr  is-size-5 has-text-grey-darker playfair">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <!-- begin Separator -->
+    <div class="separator is-clipped">
+        <svg class="separator__svg"  width="100%" height="400" viewBox="0 0 100 100" preserveAspectRatio="none" fill="#363636" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 100 100 V 2 L 0 100"/>
+            <path d="M 30 71 L 100 2 V 10 Z" fill="#474749" stroke-width="0"/>
+        </svg>
+    </div>
+    <!-- end Separator -->
+
+<!--Presentation-->
+</div>
+
+<div class="section-two">
+    <p class="section-two__descr playfair is-size-5 center">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p class="subtitle divider"><span2></span2></p>
+</div>         
+          
+<!--Bar Gallery-->
+<div id="gallery" class="box cta" style="background: #E3E8EC; margin-bottom: 20px;  margin-top: 20px;">
+    <p class="has-text-grey-darker center playfair is-size-3">Gallery</p>
+</div>
+
+<!--Instafeed-->
+<div id="instafeed">
+</div>
+
+<!--footer-->
+<footer id="contactme" class="footer" style="margin-top: 20px;">    
+   <p class="has-text-grey-darker center playfair is-size-4">Contact me</p>  
+     <br>
+     <div class="content center is-paddingless">
+        </a><a href="https://github.com/minusdan" target="_blank"><i class="fab fa-github-square fa-2x"></i>
+     </div>
+    <div class="content center">
+        <p>
+            <a class="" href="https://bulma.io">
+                <img src="https://bulma.io/images/made-with-bulma--semiblack.png" alt="Made with Bulma" width="200" height="45" style="margin-bottom: 25px">
+            </a>        
+        </p> 
+    </div>
+</footer>
+
+<div class="box cta center" style="margin-top: -50px; margin-bottom: 20px">
+    <p>© 2019 Minusdan</p>
+</div>
+
+
+</body>
+</head>

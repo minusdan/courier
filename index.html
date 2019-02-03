@@ -4,182 +4,169 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="images/bulma-icon.png" sizes="32x32">
+    <link rel="icon" href="images/courier-icon.png" sizes="32x32">
     <title>Minusdan's Courier</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900|Raleway:300,400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Passion+One" rel="stylesheet">
     <!-- Bulma Version 0.7.2-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css"/>
-    <link rel="stylesheet" type="text/css" href="styles/tstyle.css">   
-    <script defer src="js/script.js"></script> 
-    <script src="https://matthewelsom.com/assets/js/libs/instafeed.min.js"></script>
-    <script src="js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/helpers.css">  
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/grid.css">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/tiny-slider.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js"></script>
+    <script defer src="js/index.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"></script>
  
-<head>
+</head>
 <body>
-
-<!--Navbar-->
-<nav class="navbar" style="height: 100px;">
-
-    <div class="container">
-        
-        <div class="column left desktop" style="height: 100px; margin-left: 150px">
-            <a href="#home">
-                <figure class="image desktop">
-                    <img src="images/bulma-logo.png" style="height: 2.5rem" alt="bulma-logo">
-                </figure>        
-            </a>          
-        </div>
-    
-        <div class="navbar-brand desktop">
-
-            <div class="navbar-start flex column center" style="margin-right: 150px">    
-                    
-                <a class="navbar-item has-text-white" href="">
-                    Inicio
-                </a>            
-
-                <a class="navbar-item has-text-white" href="">
-                    Servicios
-                </a>
-                <a class="navbar-item has-text-white" href="">
-                    Tarifas
-                </a>
-                <a class="navbar-item has-text-white" href="">
-                    Quiénes somos
-                </a>             
-                <div class="navbar-item has-dropdown is-hoverable" style="margin-left: -5px">
-                    <a class="navbar-item has-text-white" href="/documentation/overview/start/">
-                       Contacto
-                       <span class="icon is-small"></span><i class="fas fa-angle-down"></i>
-                            </a>
-                            <div class="navbar-dropdown is-boxed">
-                                <a class="navbar-item navbar-dropdown-font" href="/documentation/overview/start/">
-                                    Horarios
-                                </a>
-                                <a class="navbar-item navbar-dropdown-font" href="https://bulma.io/documentation/modifiers/syntax/">
-                                    Preguntas Frecuentes
-                                </a>
-                                <a class="navbar-item navbar-dropdown-font" href="https://bulma.io/documentation/columns/basics/">
-                                    Números Telefonicos
-                                </a>
-                            </div>
+    <nav id="home" class="navbar">
+        <div class="container"> 
+            <div class="column left desktop is-mobile" style="height: 100px; padding-left: 15%;">
+                <a href="#home">
+                    <figure class="image desktop">
+                        <img src="images/courier-logo.png" style="height: 3rem;" alt="courier-logo">
+                    </figure>      
+                </a>          
+            </div>   
+            <div class="navbar-brand desktop">
+                <div class="column right">                     
+                    <a class="navbar-links" href="#home">Inicio</a>           
+                    <a class="navbar-links" href="#whoarewe">Quiénes somos</a> 
+                    <a class="navbar-links" href="#services">Servicios</a>           
+                    <div class="navbar-item has-dropdown is-hoverable" style="margin-left: -5px;">
+                        <a class="navbar-links" href="#contact">Contacto<span class="icon is-small"></span><i class="fas fa-angle-down"></i></a>
+                        <div class="navbar-dropdown is-boxed">
+                            <a class="navbar-item navbar-dropdown-font" href="#contact">Horarios</a>
+                            <a class="navbar-item navbar-dropdown-font" href="#contact">Preguntas Frecuentes</a>
+                            <a class="navbar-item navbar-dropdown-font" href="#contact">Números Telefónicos</a>
                         </div>
+                    </div>
+                </div>
+            </div>    
+            <div class="navbar-brand hidden-desktop">    
+                <div class="container left">                                
+                    <figure class="image">
+                        <img src="images/courier-mobile.png" style="height: 5rem; width: 5rem;" alt="courier-logo-mobile">
+                    </figure>
+                </div>
+                <div class="container right" style="height: 100px;">
+                    <figure class="navbar-burger burger hidden-desktop center" data-target="navMenu">                      
+                        <a role="button">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                </div>
+            </div> 
+        </div>
+        <div id="navMenu" class="navbar-menu hidden-desktop">
+            <ul>
+                <li><p class="navbar-item center"><a href="#home">Inicio</a></p> </li>            
+                <li><p class="navbar-item center"><a href="#whoarewe">Quiénes Somos</a></p></li>
+                <li><p class="navbar-item center"><a href="#services">Servicios</a></p></li>
+                <li><p class="navbar-item center"><a href="#contact">Contacto</a></p></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="slider-container">
+        <div class="my-slider">
+            <div class="slider-item-one"> 
+                <div class="center-card">                       
+                    <h1 class="subtitle-hero has-text-white">Servicio de transporte y logística</h1>
+                    <h2 class="text-hero has-text-white">Nos encargamos de tus compras por internet y envíos hacia cualquier parte del mundo</h2>
+                    <a href="#services" class="button is-info is-inverted is-outlined is-rounded has-text-weight-bold" style="padding: 25px; border: 0.15em solid white;">Servicios</a>  
+                    <div id="grid">
+                        <div id="a" class="center-column">
+                            <p class="subtitle-hero has-text-centered has-text-white">​Con nuestros servicios le aseguramos</p>
+                        </div>
+                        <div id="b" class="center-column">
+                            <i class="fas fa-shopping-cart fa-2x has-text-white" ></i>        
+                            <p class="subtitle grid-title has-text-centered">Compras en las principales <br>tiendas en Internet</p>
+                        </div>                                          
+                        <div id="c" class="center-column" style="border-left: 1px solid white;">
+                            <i class="fas fa-boxes fa-2x has-text-white" ></i>
+                            <p class="subtitle grid-title has-text-centered"style="padding-top: 10px; padding-bottom: 10px;">Envíos seguros</p>
+                        </div>                                           
+                        <div id="d" class="center-column" style="border-left: 1px solid white;">
+                            <i class="fas fa-truck fa-2x has-text-white"></i>
+                            <p class="subtitle grid-title has-text-centered"style="padding-top: 10px; padding-bottom: 10px;">Entrega a domicilio</p>
+                        </div>     
+                    </div>                                        
+                </div>
+            </div>               
+            <div class="slider-item-two">
+                <div class="center-card">   
+                    <h1 class="subtitle-hero has-text-white">Hero 2</h1>
+                    <h2 class="text-hero title has-text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+                </div>
+            </div>
+            <div class="slider-item-three">
+                <div class="center-card">      
+                    <h1 class="subtitle-hero has-text-white">Hero 3</h1>
+                    <h2 class="text-hero title has-text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+                </div>         
+            </div>            
+        </div>
+        <ul class="controls" id="customize-controls" aria-label="Carousel Navigation" tabindex="-1">
+                <li class="prev" data-controls="prev" aria-controls="customize" tabindex="-1"><i class="fas fa-angle-left fa-5x"></i></li>
+                <li class="next" data-controls="next" aria-controls="customize" tabindex="-1"><i class="fas fa-angle-right fa-5x"></i></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="column is-8 is-offset-2">
+            <p id="whoarewe" class="title text-title has-text-centered divider"><span>Quiénes somos</span></p>
+            <div class="content content-about-us">
+                <p>Esta es una página ejemplo de bienvenida para una franquicia de envíos y mensajeros ficticia hecha en HTML, CSS, JS y en conjunto de Bulma.io, tiny-slider por ganlanyuan https://github.com/ganlanyuan.</p>
             </div>
         </div>
-
-
-
-
-        <div class="navbar-brand hidden-desktop">    
-            <div class="container left">                                
-                <figure class="image">
-                    <img src="images/bulma-mobile.png" style="height: 5rem; width: 5rem;" alt="bulma-logo-mobile">
-                </figure>
+    </div>      
+    <div id="services" class="container-services">
+        <div class="column is-8 is-offset-2">
+            <p class="title text-title has-text-centered divider"><span>Servicios</span></p>
+            <div class="content content-services has-text-centered">
+                <p>Le invitamos a cliquear en nuestros servicios para mayor información</p>
             </div>
-
-            <div class="container center" style="height: 80px;">
-                <figure class="navbar-burger burger image hidden-desktop center has-text-white" data-target="navMenu">                      
-                    <i class="fas fa-2x fa-bars center"></i>
-                </figure>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-            </div>
-        </div>           
+        </div>
+    </div>        
+    <div class="services">  
+        <a href="#home"><img src="images/ac.png" /><p class="hover-text-services is-overlay center title has-text-centered">Casilleros<br> Internacionales</p></a>
+        <a href="#home"><img src="images/box.png" /><p class="hover-text-services is-overlay center title has-text-centered">Envíos y Compras<br>por Internet</p></a>
+        <a href="#home"><img src="images/ship.png" /><p class="hover-text-services is-overlay center title has-text-centered">Envíos<br> Marítimos</p></a>
     </div>
-
-   <!--Burger-->
-    <div id="navMenu" class="navbar-menu hidden-desktop" style="background: #363636;">
-        <div class="container space-evenly column center">
-            <p class="navbar-item"><a class="heading has-text-white is-size-7" href="#home">Home</a></p>             
-            <p class="navbar-item"><a class="heading has-text-white is-size-7" href="#gallery">Gallery</a></p>
-            <p class="navbar-item"><a class="heading has-text-white is-size-7" href="#contactme">Contact</a></p>
+    
+    <div id="contact" class="contacto">
+        <div id="gridcontact">
+            <div id="a">
+                <p class="title title-contact has-text-white is-5">Dónde encontrarnos</p>
+            </div>
+            <div id="b">
+                <p class="title title-contact has-text-white is-5">Contacto</p>
+            </div>
+            <div id="c" class="center-column">
+                <div id="map"></div>
+            </div>
+            <div id="d" class="center-column">
+                <ul>    
+                    <li class="links-social-media"><a href="https://github.com/minusdan" target="_blank"><i class="fab fa-github-square fa-2x"></i><span class="icon is-small"></span>Minusdan</a></li>
+                    <li class="links-social-media"><a href="#home"><i class="fab fa-twitter-square fa-2x"></i><span class="icon is-small"></span>Twitter</a></li>                 
+                    <li class="links-social-media"><a href="#home"><i class="fab fa-instagram fa-2x"></i><span class="icon is-small"></span>Instagram</a></li>                     
+                    <li class="links-social-media"><a href="#home"><i class="fas fa-calendar-alt  fa-2x"></i><span class="icon is-small"></span>Horarios</a></li>             
+                    <li class="links-social-media"><a href="#home"><i class="far fa-question-circle fa-2x"></i><span class="icon is-small"></span>Preguntas Frecuentes</a></li>  
+                    <li class="links-social-media"><a href="#home"><i class="fas fa-phone-square fa-2x"></i><span class="icon is-small"></span>Números Telefónicos</a></li>
+                </u1>
+            </div>
         </div>
     </div> 
-
-</nav>  
-
-<!--Background-->
-<section id="home" class="hero ">
-    
-    <figure class="image desktop">
-        
-        <div class="mask1"><img src="images/splash222.jpg" "alt="hero"></div>
-    </figure>
-    
-	<div class="is-overlay has-text-centered single-spaced" style="top: 300px;">
-            <h1 class="subtitle is-4 has-text-white">Servicio de transporte y logística</h1>
-            <h2 class="texthero title is-1 has-text-white">Para tus compras por internet y recaudos desde cualquier parte del mundo</h2>
-            <a class="button is-info is-inverted is-outlined is-rounded   has-text-weight-bold" style="padding: 25px; border: 0.15em solid white;">
-								Servicios
-							</a>
-      </div>
-
-
-
-
-    <figure class="image hidden-desktop">
-        <img src="images/hero-2.jpg" alt="hero-mobile">
-    </figure>
-</section>
-
-<!--Presentation-->
-<div class="section-one">
-    <h2 class="section-one__title is-size-3 has-text-grey-darker playfair"> Title</h2>
-
-    <p class="subtitle divider""><span></span></p>
-    
-    <p class="section-one__descr  is-size-5 has-text-grey-darker playfair">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-    <!-- begin Separator -->
-    <div class="separator is-clipped">
-        <svg class="separator__svg"  width="100%" height="400" viewBox="0 0 100 100" preserveAspectRatio="none" fill="#363636" version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <path d="M 100 100 V 2 L 0 100"/>
-            <path d="M 30 71 L 100 2 V 10 Z" fill="#474749" stroke-width="0"/>
-        </svg>
-    </div>
-    <!-- end Separator -->
-
-<!--Presentation-->
-</div>
-
-<div class="section-two">
-    <p class="section-two__descr playfair is-size-5 center">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <p class="subtitle divider"><span2></span2></p>
-</div>         
-          
-<!--Bar Gallery-->
-<div id="gallery" class="box cta" style="background: #E3E8EC; margin-bottom: 20px;  margin-top: 20px;">
-    <p class="has-text-grey-darker center playfair is-size-3">Gallery</p>
-</div>
-
-<!--Instafeed-->
-<div id="instafeed">
-</div>
-
-<!--footer-->
-<footer id="contactme" class="footer" style="margin-top: 20px;">    
-   <p class="has-text-grey-darker center playfair is-size-4">Contact me</p>  
-     <br>
-     <div class="content center is-paddingless">
-        </a><a href="https://github.com/minusdan" target="_blank"><i class="fab fa-github-square fa-2x"></i>
-     </div>
-    <div class="content center">
-        <p>
-            <a class="" href="https://bulma.io">
-                <img src="https://bulma.io/images/made-with-bulma--semiblack.png" alt="Made with Bulma" width="200" height="45" style="margin-bottom: 25px">
-            </a>        
-        </p> 
-    </div>
-</footer>
-
-<div class="box cta center" style="margin-top: -50px; margin-bottom: 20px">
-    <p>© 2019 Minusdan</p>
-</div>
-
-
+    <footer class="footer">
+        <br>
+        <div class="content center">
+            <a href="https://bulma.io" target="_blank">
+                <img src="https://bulma.io/images/made-with-bulma--semiblack.png" alt="Made with Bulma" width="200" height="45">
+            </a>
+        </div>
+        <div class="content center">           
+            <p class="has-text-white center is-size-6">© 2019 Minusdan</p>   
+        </div>
+    </footer>
 </body>
-</head>

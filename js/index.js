@@ -1,13 +1,31 @@
-var userFeed = new Instafeed({
-  get: 'user',
-  userId: '8987997106',
-  clientId: '924f677fa3854436947ab4372ffa688d',
-
-  resolution: 'standard_resolution',
-  template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a>',
-  sortBy: 'most-recent',
-  limit: 12,
-  links: false
+const slider = tns({
+    container: '.my-slider',
+    items: 1,
+    nav: false,    
+    autoplay: true,
+    autoplayHoverPause: true,
+    speed: 300,
+    autoplayTimeout: 4500,
+    autoplayButtonOutput: false,
+    mouseDrag: false,
+    lazyload: true,
+    arrowKeys: true,
+    controlsContainer: "#customize-controls",    
 });
-userFeed.run();
-/*  accessToken: '8987997106.924f677.8555ecbd52584f41b9b22ec1a16dafb9',  */
+
+function initMap() {
+    var uluru = {lat: 10.493582, lng: -66.876168};
+    var map = new google.maps.Map(
+    document.getElementById('map'), {zoom: 18, center: uluru});
+    var marker = new google.maps.Marker({position: uluru, map: map});
+}
+
+(function() {
+    var burger = document.querySelector('.burger');
+    var nav = document.querySelector('#'+burger.dataset.target);
+   
+    burger.addEventListener('click', function(){
+      burger.classList.toggle('is-active');
+      nav.classList.toggle('is-active');
+    });
+})();

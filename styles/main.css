@@ -193,7 +193,7 @@ a:hover {
   content: "";
   position: absolute;
   height: 3px;
-  background:#C0392B;
+  background: #C0392B;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
   top: 15px;
@@ -204,7 +204,7 @@ a:hover {
   content: "";
   position: absolute;
   height: 3px;
-  background:#C0392B;
+  background: #C0392B;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
   top: 15px;
@@ -241,7 +241,7 @@ a:hover {
 .services a:before {
   content: "";
   position: absolute;
-  background: blueviolet;
+  background: rgb(24, 67, 160);
   top: 0;
   left: 0;
   right: 0;
@@ -274,7 +274,7 @@ a:hover {
 } 
 #map {
   background: #F8F8F8;
-  border: 2px solid rgb(175, 129, 2);
+  border: 2px solid rgb(58, 111, 226);
   border-radius: 3px;
   margin: 15px;
   height: 90%; 
@@ -282,7 +282,7 @@ a:hover {
 }
 #map-placeholder {
 background: #F8F8F8;
-  border: 2px solid rgb(175, 129, 2);
+  border: 2px solid rgb(58, 111, 226);
   border-radius: 3px;
   margin: 15px;
   height: 90%; 
@@ -310,22 +310,22 @@ a {
   background: #9C1126;
 }
 .fa-github-square {
-  color: white;
+  color: rgb(58, 111, 226);
 }
 .fa-twitter-square {
-  color: white;
+  color: rgb(58, 111, 226);
 }
 .fa-calendar-alt {
-  color: white;
+  color: rgb(58, 111, 226);
 }
 .fa-phone-square {
-  color: white;
+  color: rgb(58, 111, 226);
 }
 .fa-question-circle {
-  color: white;
+  color: rgb(58, 111, 226);
 }
 .fa-instagram {
-  color: white;
+  color: rgb(58, 111, 226);
 }
 @media (max-width: 1087px) {
 	:root  {
